@@ -5,11 +5,17 @@ imap jk <Esc>
 nnoremap <S-w> :w<CR>
 
 " Set leader
-let mapleader = ','
+let mapleader = ' '
 
 " Quicker navigation
 nnoremap <A-h> :tabp<CR>
 nnoremap <A-l> :tabn<CR>
+
+" Open file in split and move
+nmap <leader>sr <Action>(MoveTabRight)
+
+" Move file to opposite tab group
+nmap <leader>so <Action>(MoveEditorToOppositeTabGroup)
 
 " Splits
 map <C-h> <C-w>h
