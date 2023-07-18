@@ -5,7 +5,7 @@ imap jk <Esc>
 nnoremap <S-w> :w<CR>
 
 " Set leader
-let mapleader = ' '
+let mapleader = ','
 
 " Quicker navigation
 nnoremap <A-h> :tabp<CR>
