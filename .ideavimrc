@@ -1,0 +1,18 @@
+set splitright splitbelow
+set number 
+set relativenumber
+imap jk <Esc>
+nnoremap <S-w> :w<CR>
+
+" Quicker buffer navigation
+nnoremap <A-h> :previous<CR>
+nnoremap <A-l> :bnext<CR>
+
+" Splits
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Replace all is aliased to S.
+nnoremap S :%s//g<Left><Left>
