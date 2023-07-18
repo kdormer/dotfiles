@@ -4,6 +4,9 @@ set relativenumber
 imap jk <Esc>
 nnoremap <S-w> :w<CR>
 
+" Set leader
+let mapleader = ' '
+
 " Quicker navigation
 nnoremap <A-h> :tabp<CR>
 nnoremap <A-l> :tabn<CR>
