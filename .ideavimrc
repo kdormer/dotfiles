@@ -1,8 +1,13 @@
-set splitright splitbelow
+" Numbers
 set number 
 set relativenumber
+
+" Escape and save keybidings 
 imap jk <Esc>
 nnoremap <S-w> :w<CR>
+
+" Set sane split defaults
+set splitright splitbelow
 
 " Set leader
 let mapleader = ' '
