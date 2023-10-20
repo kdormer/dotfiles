@@ -30,3 +30,6 @@ map <C-l> <C-w>l
 
 " Replace all is aliased to S.
 nnoremap S :%s//g<Left><Left>
+
+" Mute bell 
+set visualbell
