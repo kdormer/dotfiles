@@ -1,0 +1,44 @@
+-- New plugin list
+lazy nvim - plugin manager
+nvim autopair
+comment.nvim
+nvim-web-devicons
+nvim tree
+barbar nvim
+lualine
+toggleterm
+project.nvim
+indent-blankline
+alpha nvim
+which-key nvim
+fidget nvim
+trouble nvim
+nord nvim
+mason nvim
+lspconfig
+mason-lspconfig.nvim
+nvim-dap
+nvim-dap-ui
+nvim-lint
+nvim-cmp
+nvim-cmp-buffer
+nvim-cmp-path
+cmp-nvim-lsp
+cmp-nvim-lua
+cmp_luasnip
+luasnip
+friendly snippets
+nvim-telescope/telescope.nvim'
+plenary
+ripgrep
+telescope-fzf-native-nvim
+nvim-treesitter
+nvim-ts-context-commentstring
+rainbow-delimiters.nvim
+vim-fugitive
+gitsigns
+nvim-notify
+
+lazygit
+create custom terminals and more bindings for toggleterm
+get debugging working
