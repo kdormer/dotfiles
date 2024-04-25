@@ -22,6 +22,9 @@ nmap <leader>sr <Action>(MoveTabRight)
 " Move file to opposite tab group
 nmap <leader>so <Action>(MoveEditorToOppositeTabGroup)
 
+" Maximise/restore current split (relies on TabShifter plugin)
+nmap <leader>sf <Action>(TabShiftActions.ToggleMaximizeRestore)
+
 " Splits
 map <C-h> <C-w>h
 map <C-j> <C-w>j
