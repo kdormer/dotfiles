@@ -1,0 +1,24 @@
+# ~/.config/zsh/zshrc
+
+# load startship prompt
+eval "$(starship init zsh)"
+
+bindkey -v # enable vi mode
+
+zstyle :compinstall filename '/home/kyle/.config/zsh/.zshrc'
+
+# enable autocompletion
+autoload -Uz compinit
+compinit
+
+# return if non-interactive shell
+[[ $- != *i* ]] && return
+
+source /usr/share/nvm/init-nvm.sh # load nvm
+source <(ng completion script) # load angular cli autocomplete
+
+# Source aliases, functions, plugins
+[ -f "$XDG_CONFIG_HOME/zsh/zsh_aliases.zsh" ] && source "$XDG_CONFIG_HOME/zsh/zsh_aliases.zsh"
+[ -f "$XDG_CONFIG_HOME/zsh/zsh_functions.zsh" ] && source "$XDG_CONFIG_HOME/zsh/zsh_functions.zsh"
+[ -f "$XDG_CONFIG_HOME/zsh/zsh_plugins.zsh" ] && source "$XDG_CONFIG_HOME/zsh/zsh_plugins.zsh"
+
