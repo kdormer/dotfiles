@@ -1,0 +1,81 @@
+# ~/.config/newsboat/config
+
+# Reload automatically on startup and thereafter every 30 mins
+auto-reload yes
+reload-time 30
+
+# Confirm to exit
+confirm-exit yes
+
+# Binds (+ vim navigation)
+bind j everywhere down
+bind k everywhere up
+bind g everywhere home
+bind G everywhere end
+bind l everywhere open
+bind h everywhere quit
+bind a feedlist,articlelist toggle-article-read
+bind n feedlist,articlelist,article next-unread
+bind N everywhere prev-unread
+bind o article,articlelist open-in-browser-and-mark-read
+
+# batch open all unread for given feed
+bind b articlelist open-all-unread-in-browser-and-mark-read
+
+# Date format for article timestamps
+datetime-format "%Y-%m-%d %H:%M"
+
+# Browser command (use 'o' to open links)
+browser "firefox --new-tab %u"
+
+# Rough Kanagawa Wave color scheme for newsboat
+# Background handled by terminal (Alacritty + kanagawa_wave)
+color background        color223  default       # fuji white on terminal bg
+color listnormal        color223  default       # normal items
+color listnormal_unread color117  default bold  # unread items — spring blue
+color listfocus         color223  color24       # focused item — wave blue bg
+color listfocus_unread  color117  color24  bold # focused unread — spring blue on wave blue
+color info              color137  color235 bold # status bar — carp yellow on dark
+color article           color223  default       # article text
+
+# Article highlights
+highlight article "^(Feed|Link):.*$"         color110 default bold   # crystal blue
+highlight article "^(Title|Date|Author):.*$" color137 default bold   # carp yellow
+highlight article "https?://[^ ]+"           color110 default underline
+highlight article "\\[[0-9]+\\]"             color110 default bold
+highlight article "^(Summary):.*$"           color182 default bold   # oni violet
+
+################################################################################
+# Useful notes                                                                 #
+################################################################################
+# Ctrl + k = random unread article
+# Ctrl + U = toggle source
+# Ctrl + T = clear current tag
+# Ctrl + R = reload urls
+# Ctrl + B = bookmark currently selected article or URL
+# Shift + E = open urls file in EDITOR
+# S = save article to txt file
+# U = show all URLs in article
+# T = set tag
+# '#' = goto url dialog
+
+# Tagging functionality:
+# Add tags to urls file by appending to end of url e.g. website.com linux health
+# Then in newsboat, T allows you to filter by tag
+# Rename feed using ~ tags. E.g. www.website.com "~Website Feed"
+# Hide feed from feedlist with ! tag, but articles will be shown in query feed,
+# e.g. www.scary-news-site.com ! news
+
+# Default colorscheme as of 05/04/2026:
+# color background          white   black
+# color listnormal          white   black
+# color listfocus           yellow  blue   bold
+# color listnormal_unread   white   black  bold
+# color listfocus_unread    yellow  blue   bold
+# color title               yellow  blue   bold
+# color info                yellow  blue   bold
+# color hint-key            yellow  blue   bold
+# color hint-keys-delimiter white   blue
+# color hint-separator      white   blue   bold
+# color hint-description    white   blue
+# color article             white   black
